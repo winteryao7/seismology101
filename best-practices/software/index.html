@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>高效率软件 &mdash; 地震“学”科研入门教程</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/mystnb.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/design-tabs.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex/" />
+    <link rel="search" title="搜索" href="../../search/" />
+    <link rel="next" title="Zsh 及其配置" href="../zsh/" />
+    <link rel="prev" title="Windows 数据备份" href="../backup-Windows/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../" class="icon icon-home"> 地震“学”科研入门教程
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <p class="caption" role="heading"><span class="caption-text">计算机基础</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/operating-system/">选择操作系统</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/setup/">配置操作系统</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/linux101/">Linux 入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/commands/">Linux 常用命令</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/editor/">编辑器</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">编程基础</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/languages/">编程语言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/compile/">编译与链接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/version-control/">版本控制</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">地震学基础</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/basis/">地震学基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/data/">地震学数据</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/software/">常用软件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/resources/">学习资料</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">地震学实践</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/prerequisite/">准备工作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/download/">资料下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/process/">资料处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/analysis/">资料分析</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">实践经验</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../file-organization/">文件管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software-installation/">软件安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backup/">数据备份</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">高效率软件</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dos2unix-unix2dos">dos2unix &amp; unix2dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tldr">tldr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ack">ack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">解压软件</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">终端</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#vs-code">VS Code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../zsh/">Zsh 及其配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode/">VS Code 使用教程</a></li>
+</ul>
+
+
+    
+        <p class="caption">
+            <span class="caption-text">外部链接</span>
+        </p>
+        <ul>
+            
+                <li class="toctree-l1"><a href="https://seismo-learn.org/"><i class="fa fa-home"></i> 地震“学”主站</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/seismo-learn/seismology101"><i class="fa fa-github fa-fw"></i> 网站源码</a></li>
+            
+                <li class="toctree-l1"><a href="https://seismo-learn.org/contributing/"><i class="fa fa-edit fa-fw"></i> 贡献指南</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/seismo-learn/seismology101/discussions"><i class="fa fa-comments fa-fw"></i> 参与讨论</a></li>
+            
+        </ul>
+    
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">地震“学”科研入门教程</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home"></a> &raquo;</li>
+      <li>高效率软件</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/seismo-learn/seismology101/blob/main/source/best-practices/software.rst" class="fa fa-github"> 编辑本页</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>高效率软件<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">本节贡献者</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://me.seisman.info/">田冬冬</a>（作者）、
+<a class="reference external" href="https://github.com/core-man">姚家园</a>（作者）</p>
+</dd>
+<dt class="field-even">最近更新日期</dt>
+<dd class="field-even"><p>2021-11-20</p>
+</dd>
+</dl>
+<hr class="docutils" />
+<p>这一节推荐一些可以提高日常效率的软件，供读者参考。</p>
+<section id="dos2unix-unix2dos">
+<h2>dos2unix &amp; unix2dos<a class="headerlink" href="#dos2unix-unix2dos" title="永久链接至标题"></a></h2>
+<p>Windows 和 Linux/macOS 系统下，<a class="reference external" href="https://www.ruanyifeng.com/blog/2006/04/post_213.html">文本文件的换行符</a>是不同的。
+<code class="docutils literal notranslate"><span class="pre">dos2unix</span></code> 和 <code class="docutils literal notranslate"><span class="pre">unix2dos</span></code> 是可以实现换行符转换的命令行工具。
+<code class="docutils literal notranslate"><span class="pre">dos2unix</span></code> 可以将 Windows 系统下的换行符转换为 Linux/macOS 系统下的换行符，
+<code class="docutils literal notranslate"><span class="pre">unix2dos</span></code> 则反之。</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="7395b64a-4910-4785-9e90-e17467a20af9" name="12361d71-a0e6-452e-a2df-0ef6e93b34d2" type="radio">
+</input><label class="sd-tab-label" data-sync-id="fedora" for="7395b64a-4910-4785-9e90-e17467a20af9">
+Fedora</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo dnf install dos2unix
+</pre></div>
+</div>
+</div>
+<input id="6f89e03a-35ce-4a4c-80e0-810042edb0d8" name="12361d71-a0e6-452e-a2df-0ef6e93b34d2" type="radio">
+</input><label class="sd-tab-label" data-sync-id="ubuntu" for="6f89e03a-35ce-4a4c-80e0-810042edb0d8">
+Ubuntu</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt install dos2unix
+</pre></div>
+</div>
+</div>
+<input id="71150318-6c3d-4230-90c0-6a037734bc26" name="12361d71-a0e6-452e-a2df-0ef6e93b34d2" type="radio">
+</input><label class="sd-tab-label" data-sync-id="macos" for="71150318-6c3d-4230-90c0-6a037734bc26">
+macOS</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ brew install dos2unix unix2dos
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="tldr">
+<h2>tldr<a class="headerlink" href="#tldr" title="永久链接至标题"></a></h2>
+<p><a class="reference external" href="https://tldr.sh/">tldr</a> 是一个提供命令的常用用法和示例的命令行工具，其功能与 UNIX 下的 <code class="docutils literal notranslate"><span class="pre">man</span></code> 命令相似，但其提供的输出更简单、更易读。使用如下命令安装 <code class="docutils literal notranslate"><span class="pre">tldr</span></code>：</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="e8062734-325d-488b-a6c3-aa6220e451b8" name="3a71b186-937c-4387-be09-0d51164bdae0" type="radio">
+</input><label class="sd-tab-label" data-sync-id="fedora" for="e8062734-325d-488b-a6c3-aa6220e451b8">
+Fedora</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo dnf install tldr
+</pre></div>
+</div>
+</div>
+<input id="50a6e8d6-202f-4470-a78c-584988e29856" name="3a71b186-937c-4387-be09-0d51164bdae0" type="radio">
+</input><label class="sd-tab-label" data-sync-id="ubuntu" for="50a6e8d6-202f-4470-a78c-584988e29856">
+Ubuntu</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt install tldr
+</pre></div>
+</div>
+</div>
+<input id="911bbbb3-65b2-4475-bca1-706cc28f80b9" name="3a71b186-937c-4387-be09-0d51164bdae0" type="radio">
+</input><label class="sd-tab-label" data-sync-id="macos" for="911bbbb3-65b2-4475-bca1-706cc28f80b9">
+macOS</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ brew install tldr
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ack">
+<h2>ack<a class="headerlink" href="#ack" title="永久链接至标题"></a></h2>
+<p><a class="reference external" href="https://beyondgrep.com/">ack</a> 是一个字符搜索工具，与 <code class="docutils literal notranslate"><span class="pre">grep</span></code> 命令类似。其专为搜索源代码设计，因而在日常编程中更加简单易用。使用如下命令安装 <code class="docutils literal notranslate"><span class="pre">ack</span></code>。</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="51fb5669-e47d-48a0-bcfc-46066a57ff0e" name="0099f096-9a35-4974-921b-c61d5286afdf" type="radio">
+</input><label class="sd-tab-label" data-sync-id="fedora" for="51fb5669-e47d-48a0-bcfc-46066a57ff0e">
+Fedora</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo dnf install ack
+</pre></div>
+</div>
+</div>
+<input id="2758cb77-3d89-4297-834b-c47b7f7acf82" name="0099f096-9a35-4974-921b-c61d5286afdf" type="radio">
+</input><label class="sd-tab-label" data-sync-id="ubuntu" for="2758cb77-3d89-4297-834b-c47b7f7acf82">
+Ubuntu</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt install ack
+</pre></div>
+</div>
+</div>
+<input id="79169fda-73f4-4055-9c12-fdd63d866f89" name="0099f096-9a35-4974-921b-c61d5286afdf" type="radio">
+</input><label class="sd-tab-label" data-sync-id="macos" for="79169fda-73f4-4055-9c12-fdd63d866f89">
+macOS</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ brew install ack
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id2">
+<h2>解压软件<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>Fedora/Ubuntu/macOS 系统自带的压缩解压工具可以识别并打开 Linux 下的常见压缩格式（如 <code class="docutils literal notranslate"><span class="pre">.tar.gz</span></code>、<code class="docutils literal notranslate"><span class="pre">.tar.bz2</span></code> 等），也支持 Windows 和 macOS 下的常见压缩格式（如 <code class="docutils literal notranslate"><span class="pre">.zip</span></code> 和 <code class="docutils literal notranslate"><span class="pre">.7z</span></code>），但默认不支持 <code class="docutils literal notranslate"><span class="pre">.rar</span></code> 格式。推荐安装解压软件 <a class="reference external" href="https://theunarchiver.com/">The Unarchiver</a>，其支持几乎所有压缩格式。安装后即可通过双击直接解压 <code class="docutils literal notranslate"><span class="pre">.rar</span></code> 文件。</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="af53d5b0-ffb6-4ca6-940f-0ae3fceb6d8a" name="11ef7cf2-8e84-4553-b9d5-0385d2044d5e" type="radio">
+</input><label class="sd-tab-label" data-sync-id="fedora" for="af53d5b0-ffb6-4ca6-940f-0ae3fceb6d8a">
+Fedora</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo dnf install unar
+</pre></div>
+</div>
+</div>
+<input id="1974a688-a414-4ca1-af86-879b07154f00" name="11ef7cf2-8e84-4553-b9d5-0385d2044d5e" type="radio">
+</input><label class="sd-tab-label" data-sync-id="ubuntu" for="1974a688-a414-4ca1-af86-879b07154f00">
+Ubuntu</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt install unar
+</pre></div>
+</div>
+</div>
+<input id="3f024689-fe49-4dd3-be41-775704bed9f0" name="11ef7cf2-8e84-4553-b9d5-0385d2044d5e" type="radio">
+</input><label class="sd-tab-label" data-sync-id="macos" for="3f024689-fe49-4dd3-be41-775704bed9f0">
+macOS</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ brew install --cask the-unarchiver
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id3">
+<h3>终端<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
+<p>Fedora/Ubuntu/macOS 自带了终端模拟器 Terminal，使用起来中规中矩。日常科研经常需要开好几个终端，切换和管理起来比较麻烦。</p>
+<p>Linux 下的 <a class="reference external" href="https://gnome-terminator.org/">Terminator</a> 和
+macOS 下的 <a class="reference external" href="https://iterm2.com/">iTerm2</a> 相比于自带 Terminal 具有更多的功能，比如支持水平和垂直分割窗格以及终端快速切换。</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="8337030a-9de2-4a98-aadf-48572e3cd8a5" name="76052290-51e3-4c24-a758-94df86620d7d" type="radio">
+</input><label class="sd-tab-label" data-sync-id="fedora" for="8337030a-9de2-4a98-aadf-48572e3cd8a5">
+Fedora</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo dnf install terminator
+</pre></div>
+</div>
+</div>
+<input id="e07ad16b-1aeb-4d5c-a38a-cbef59ba2932" name="76052290-51e3-4c24-a758-94df86620d7d" type="radio">
+</input><label class="sd-tab-label" data-sync-id="ubuntu" for="e07ad16b-1aeb-4d5c-a38a-cbef59ba2932">
+Ubuntu</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt install terminator
+</pre></div>
+</div>
+</div>
+<input id="7cb8a4af-adf9-4e6f-b4af-37254f548e2f" name="76052290-51e3-4c24-a758-94df86620d7d" type="radio">
+</input><label class="sd-tab-label" data-sync-id="macos" for="7cb8a4af-adf9-4e6f-b4af-37254f548e2f">
+macOS</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ brew install --cask iterm2
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="vs-code">
+<h2>VS Code<a class="headerlink" href="#vs-code" title="永久链接至标题"></a></h2>
+<p>Fedora/Ubuntu/macOS 系统自带的文本编辑器只具有最基本的文本编辑功能，无法满足日常编程需求。推荐安装并使用更强大的文本编辑器 <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>。VS Code 的安装与配置见 <a class="reference internal" href="../vscode/"><span class="doc">VS Code 使用教程</span></a>。</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../backup-Windows/" class="btn btn-neutral float-left" title="Windows 数据备份" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../zsh/" class="btn btn-neutral float-right" title="Zsh 及其配置" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2020–2021, seismo-learn.
+      <span class="lastupdated">最后更新于 2021 年 12 月 19 日.
+      </span></p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">sphinx_rtd_theme 主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
